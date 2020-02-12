@@ -1,0 +1,51 @@
+﻿@model IEnumerable<JK651914_MIS4200SD.Models.Car>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.brand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.licensePlate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.purchaseDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.licensePlate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.purchaseDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.carId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.carId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.carId })
+        </td>
+    </tr>
+}
+
+</table>

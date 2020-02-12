@@ -9,7 +9,6 @@ namespace JK651914_MIS4200SD.Models
     {
 
         public int carId { get; set; }
-        public int orderId { get; set; }
         public string brand { get; set; }
         public string model { get; set; }
         public string licensePlate { get; set; }

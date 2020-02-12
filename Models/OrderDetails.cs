@@ -8,7 +8,7 @@ namespace JK651914_MIS4200SD.Models
     public class OrderDetails
     {
 
-        public int orderdetailID { get; set; }
+        public int orderdetailsId { get; set; }
         public decimal price { get; set; }
 
 

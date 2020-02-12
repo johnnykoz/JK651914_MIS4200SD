@@ -11,7 +11,7 @@ namespace JK651914_MIS4200SD.Models.DAL
   
         public class MIS4200Context : DbContext // inherits from DbContext
         {
-            public MIS4200Context() : base("name=JK651914_MIS4200SD")
+            public MIS4200Context() : base("name=DefaultConnection")
             {
                 // this method is a 'constructor' and is called when a new context is created
                 // the base attribute says which connection string to use
