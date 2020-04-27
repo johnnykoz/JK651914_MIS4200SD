@@ -16,7 +16,6 @@ namespace JK651914_MIS4200SD.Models
 
 
 
-        public ICollection<OrderDetails> OrderDetails { get; set; }
-
+       public ICollection<OrderDetails> OrderDetails { get; set; }
     }
 }

@@ -13,10 +13,10 @@ namespace JK651914_MIS4200SD.Models
         public string lastName { get; set; }
         public DateTime birthDate { get; set; }
         // add any other fields as appropriate
-        //Owner is on the "one" side of a one-to-many relationship with OrderDetails
+        //Order is on the "one" side of a one-to-many relationship with OrderDetail
         //and we indicate that with an ICollection
 
-        public ICollection<OrderDetails> OrderDetails { get; set; }
+       public ICollection<OrderDetails> OrderDetails { get; set; }
       
 
     }
