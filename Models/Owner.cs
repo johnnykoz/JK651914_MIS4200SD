@@ -16,8 +16,7 @@ namespace JK651914_MIS4200SD.Models
         //Order is on the "one" side of a one-to-many relationship with OrderDetail
         //and we indicate that with an ICollection
 
-        public int carId { get; set; }
-        public ICollection<Car> Cars { get; set; }
+       public ICollection<OrderDetails> OrderDetails { get; set; }
       
 
     }
