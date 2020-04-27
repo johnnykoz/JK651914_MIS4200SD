@@ -1,0 +1,45 @@
+﻿@model IEnumerable<JK651914_MIS4200SD.Models.OrderDetails>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cars.brand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owners.fistName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cars.brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owners.fistName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.orderdetailsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.orderdetailsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.orderdetailsId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -12,10 +12,10 @@ namespace JK651914_MIS4200SD.Models
         public decimal price { get; set; }
 
 
-        // the next two properties link the orderDetail to the Order
+        // the next two properties link the orderDetail to the Car
         public int CarId { get; set; }
         public virtual Car Cars { get; set; }
-        // the next two properties link the orderDetail to the Product
+        // the next two properties link the orderDetail to the Owner
         public int ownerId { get; set; }
         public virtual Owner Owners { get; set; }
 

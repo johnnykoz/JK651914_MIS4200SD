@@ -1,0 +1,42 @@
+﻿@model JK651914_MIS4200SD.Models.OrderDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cars.brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cars.brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owners.fistName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owners.fistName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.orderdetailsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
